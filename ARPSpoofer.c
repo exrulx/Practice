@@ -78,6 +78,7 @@ int main(int argc, char *argv[])
 		printf(i % 16 == 15 ? "%02x\n              " : "%02x ", *(BYTE *)(packet + i));
 	}
 	fputs("\n\n", stdout);
+	i = 0;
 	while (1)
 	{
 		libnet_write(l);
